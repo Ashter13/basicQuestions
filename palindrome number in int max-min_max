@@ -1,0 +1,21 @@
+class Solution {
+public:
+    int sum=0,temp,r;
+    bool isPalindrome(int x) {
+        temp=x;
+        while(x>0)
+            {    
+ r=x%10; 
+            if((sum>INT_MAX/10)||(sum<INT_MIN/10)){
+                return 0;
+            }
+ sum=(sum*10)+r;    
+ x=x/10;    
+}    
+if(temp==sum)  {
+    return true;
+}
+        else return false;
+        
+    }
+};
